@@ -8,7 +8,7 @@ explain what is the difference between Strict mode and Soft mode
 function checkOrder(num1, num2, num3) {
     if(num1 < num2 && num2 < num3) {
         return "Strict Mode";
-    } else if (num1 <= num2 || num2 <= num3) {
+    } else if (num3 > num2) {
         return "Soft Mode";
     }
 

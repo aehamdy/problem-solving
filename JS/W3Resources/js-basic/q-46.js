@@ -11,7 +11,7 @@ function testIntegers(num1, num2) {
     } else {
 
         return false;
-        
+
     }
     
 };

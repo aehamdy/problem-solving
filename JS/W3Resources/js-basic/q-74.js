@@ -4,7 +4,7 @@
 
 function unifyMax(input) {
     const result = input.reduce((acc, curr) => acc > curr ? acc : curr);
-    return input.map((el) => el = result);
+    return input.map((el) => (el = result));
 }
 
 console.log(unifyMax([20, 30, 40]));

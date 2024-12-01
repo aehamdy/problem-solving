@@ -5,10 +5,10 @@ Expected Output : 'The Quick Brown Fox '
 */
 
 function convertFirst(string) {
+    const value = string.toLowerCase().split(" ");
+    const result = value.map((phrase) => phrase.charAt(0).toUpperCase() + phrase.slice(1)).join(" ")
 
-    
-
-    return string.toLowerCase().split(" ").map((phrase) => phrase.charAt(0).toUpperCase() + phrase.slice(1)).join(" ");
+    return result;
 }
 
 console.log(convertFirst("the quick brown fox"));
